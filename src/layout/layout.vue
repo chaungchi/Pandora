@@ -58,7 +58,7 @@ const handleScroll = (scroll) => {
 </script>
 
 <template>
-  <div class="w100vw h100vh text-24 sm:text-18">
+  <div class="w100vw h100vh fs-16 sm:text-18">
     <!-- 工具栏 -->
     <transition
       :duration="{ enter: 5000, leave: 10000 }"
