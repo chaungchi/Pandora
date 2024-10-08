@@ -1,0 +1,21 @@
+{
+  "public": {},
+  "login": {
+    "name": "用户名",
+    "pass": "密码",
+    "login": "登录",
+    "plasePass": "请输入密码",
+    "namen": "该账号不存在，请检查是否输入正确！",
+    "passn": "密码错误！"
+  },
+  "message": {
+    "loginSuccess": "登录成功",
+    "logoutSuccess": "退出登录"
+  },
+  "header": {},
+  "main": {},
+  "footer": {},
+  "router": {
+    "login": "登录"
+  }
+}

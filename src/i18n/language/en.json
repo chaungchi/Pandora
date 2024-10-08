@@ -1,0 +1,21 @@
+{
+  "public": {},
+  "login": {
+    "name": "User name",
+    "pass": "Pass word",
+    "login": "Log in",
+    "plasePass": "Please enter your PIN",
+    "namen": "This account does not exist",
+    "passn": "Incorrect password"
+  },
+  "message": {
+    "loginSuccess": "login successfully",
+    "logoutSuccess": "Logout successfully Login"
+  },
+  "header": {},
+  "main": {},
+  "footer": {},
+  "router": {
+    "login": "Login"
+  }
+}

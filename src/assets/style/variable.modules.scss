@@ -1,0 +1,28 @@
+// 主题配色
+$theme: var(--theme, #ffffff); // 主题色
+$themes: var(--themes, #ffffff60); // 主题色s
+$themess: var(--themess, #ffffff30); // 主题色ss
+$dark: var(--dark, #ffffff); // 深色模式的背景色
+$light: var(--light, #ffffff); // 浅色模式的背景色
+$atcolor: var(--atcolor, #ffffff); // 当前色
+$hgcolor: var(--hgcolor, #ffffff); // 强调颜色
+
+:root {
+  --hh: 60px;
+  --chs: calc(100% - var(--hh));
+  --ch: calc(100vh - var(--hh));
+}
+
+// unocss定义断点
+$breakpoint-xs: 375px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1400px;
+$breakpoint-xl: 1600px;
+
+// 定义 mixin 以简化 @media 查询
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

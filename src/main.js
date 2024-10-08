@@ -1,0 +1,14 @@
+import { createApp } from "vue";
+import App from "./App.vue";
+import { router } from "./router";
+import { setupStore } from "@/store";
+import VueI18n from "./i18n/locales/index";
+import "@/assets/style/public.scss";
+import "@/assets/style/naive.scss";
+import "animate.css/animate.min.css";
+import "uno.css";
+const app = createApp(App);
+setupStore(app);
+app.use(router);
+app.use(VueI18n);
+app.mount("#app");
