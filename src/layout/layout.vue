@@ -68,7 +68,7 @@ const handleScroll = (scroll) => {
       enter-active-class="animate__animated animate__fadeInDown"
       leave-active-class="animate__animated animate__slideOutUp"
       leave-to-class="animate__slideOutUp">
-      <header class="fixed top-0 left-0 z-999 right-0 b-0 b-b-1 b-solid b-$theme" v-if="isToolbarVisible">
+      <header class="fixed top-0 left-0 z-999 right-0 bg-themess header-fs" v-if="isToolbarVisible">
         <Header />
       </header>
     </transition>

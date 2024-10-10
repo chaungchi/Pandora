@@ -37,18 +37,21 @@ export default defineConfig({
     }
   ],
   shortcuts: {
-    "header-icon-fs": "text-30 lg:text-24",
+    "header-icon-fs": "text-22 sm:text-24 md:text-26 lg:text-28 xl:text-30",
+    "header-fs": "text-14  sm:text-16 xl:text-18",
     center: "flex items-center justify-center",
     bet: "flex items-center justify-between",
-    "p-main": "p4px xs:p-8px sm:p-10px md:p12px lg:p16px xl:p20px",
-    "m-main": "p4px xs:p-8px sm:p-10px md:m12px lg:m16px xl:m20px",
+    "p-main": "p6px xs:p-8px sm:p-12px md:p16px lg:p18px xl:p20px",
+    "m-main": "p6px xs:p-8px sm:p-12px md:m16px lg:m18px xl:m20px",
     border: "border-1 border-solid border-theme",
     borders: "border-1 border-solid border-themes",
-    cp: "cursor-pointer"
+    borderss: "border-1 border-solid border-themess",
+    cp: "cursor-pointer",
   },
   rules: [
     [/^fs-(\d+)$/, ([, num]) => ({ "font-size": `${num}px` })],
     [/^lh-(\d+)$/, ([, num]) => ({ "line-height": `${num}px` })],
+    [/^gd-(\d+)$/, ([, num]) => ({ "transition-duration": `${num}ms` })],
     // 自定义规则用于表示最大宽度
     [/^max-xs:(.*)$/, ([, s]) => ({ ["@media (max-width: 375px)"]: { display: s } })],
     [/^max-sm:(.*)$/, ([, s]) => ({ ["@media (max-width: 768px)"]: { display: s } })],

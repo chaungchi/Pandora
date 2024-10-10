@@ -1,15 +1,25 @@
 <script setup>
+import { computed } from "vue";
+import { useAppStore } from "@/store/modules/app";
 import { goName } from "@/common";
+const appStore = useAppStore();
+const isDark = computed(() => appStore.getIsDark);
+
 const title = import.meta.env.VITE_APP_TITLE;
 </script>
 <template>
-  <div class="wa h100% center p8px cp" @click="goName('web')">
-    <div class="wa h100% rounded-2 overflow-hidden">
-      <img src="@/assets/image/logo/chuang.png" class="wa h100%!" />
+  <div class="flex">
+    <div class="wa h100% overflow-hidden p16" @click="goName('web')">
+      <template v-if="isDark">
+        <img src="@/assets/image/logo/cxc_light.png" class="wa h100%!" />
+      </template>
+      <template v-else>
+        <img src="@/assets/image/logo/cxc_dark.png" class="wa h100%!" />
+      </template>
     </div>
-    <p class="font-bold color-theme">
+    <!--  <div class="fw-bold color-theme center py0">
       {{ title }}
-    </p>
+    </div> -->
   </div>
 </template>
 <style lang="scss"></style>
